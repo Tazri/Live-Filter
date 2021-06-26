@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --var-background : linear-gradient(0deg, rgb(112, 84, 203),rgb(232, 47, 180));
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: none;
+}
+
+*::-moz-focus-inner,
+*::-moz-focus-outer{
+    outline: none;
+}
+
+body{
+    background: var(--var-background);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    min-width: 270px;
+    width: 98%;
+    max-width: 500px;
+    overflow: hidden;
+    background: rgba(240, 248, 255, 0.575);
+    border-radius: 10px;
+    border-bottom: 1px solid aliceblue;
+}
+
+header{
+    background: rgb(0, 136, 255);
+    padding: 20px 20px;
+    width: 100%;
+}
+
+header h1{
+    color: aliceblue;
+    font-size: 26px;
+}
+
+header p{
+    color: rgba(240, 248, 255, 0.863);
+}
+
+header input{
+    background: rgba(240, 248, 255, 0.658);
+    border: 2px solid aliceblue;
+    color: rgb(142, 143, 145);
+    font-size: 18px;
+    padding: 10px 12px;
+    border-radius: 17px;
+    margin-top: 14px ;
+}
+
+.list-user{
+    max-height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    border: 1px solid aliceblue;
+}
+
+.user{
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    background: aliceblue;
+}
+
+li:last-child{
+    margin-bottom: 0px;
+}
+
+.info{
+    margin-left: 10px;
+}
+
+.info h2{
+    color: rgb(0, 136, 255);
+}
+
+.info p{
+    color: grey;
+}
+
+.user img{
+    border-radius: 50px;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+
+.hide{
+    display: none;
+}
+
+h3{
+    background: aliceblue;
+    color: rgb(0, 136, 255);
+    padding: 10px;
+    font-size: 25px;
+}
